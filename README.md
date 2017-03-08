@@ -49,5 +49,15 @@ or
 ```
 npm install --save react-method-bind
 ```
-
-
+### Gotchas
+When using the shorthand syntax ```binder(this)```, the following functions are excluded:
+  'render',
+  'hasOwnProperty',
+  'propertyIsEnumerable',
+  'constructor',
+  'toString',
+  'toLocaleString',
+  'valueOf',
+  'hasOwnProperty',
+  'isPrototypeOf'.
+  
